@@ -1,0 +1,29 @@
+.item {
+  display: flex;
+  margin-bottom: var(--spacing-2);
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.link {
+  flex: 1;
+  font-size: var(--font-size-3);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.controls {
+  display: flex;
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.item:hover .controls {
+  opacity: 1;
+}
+
+.item:hover .link {
+  opacity: 0.3;
+}

@@ -1,0 +1,42 @@
+.modalRoot {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-2);
+  background-color: var(--color-background);
+  overflow: hidden;
+  border-radius: var(--radii-module-3);
+  box-shadow: var(--shadow-lvl-2);
+  z-index: 2;
+}
+
+.title {
+  margin-bottom: var(--spacing-2_5);
+  font-size: var(--font-size-4);
+}
+
+.control {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.closeButton {
+  width: 32px;
+  height: 32px;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-backdrop);
+}

@@ -1,0 +1,25 @@
+.button {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+
+.button:before {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background-color: transparent;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.button:hover:before {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.button:active:before {
+  background-color: rgba(0, 0, 0, 0.2);
+}

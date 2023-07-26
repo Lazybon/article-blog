@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-3) 0;
+}
+
+.navigation {
+  display: flex;
+  gap: 0 var(--spacing-2);
+}
+
+.link {
+  text-decoration: none;
+  font-size: var(--font-size-3);
+}
+
+.link:hover {
+  opacity: 0.6;
+  text-decoration-color: var(--color-link);
+}
+
+.button:before {
+  border-radius: var(--radii-module-2);
+}
+
+.formModal {
+  width: 450px;
+  height: 500px;
+}

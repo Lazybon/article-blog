@@ -1,0 +1,55 @@
+.form {
+  display: flex;
+  flex-direction: column;
+    height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper > *:not(:nth-child(1)) {
+  margin-left: var(--spacing-2);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--spacing-2);
+}
+
+.section > input:not(:nth-child(1)) {
+  margin-top: var(--spacing-2);
+}
+
+.input {
+  padding-left: var(--spacing-1);
+}
+
+.textarea {
+  height: 300px;
+  padding-left: var(--spacing-1);
+  resize: none;
+}
+
+.submitButton {
+  height: 32px;
+  margin-top: auto;
+  color: var(--color-text);
+  background-color: #0070f3;
+  border-radius: var(--radii-module-3);
+}
+
+.submitButton > span {
+  z-index: 2;
+  color: white;
+}
+
+.submitButton:hover:before {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.submitButton:active:before {
+  background-color: rgba(0, 0, 0, 0.2);
+}

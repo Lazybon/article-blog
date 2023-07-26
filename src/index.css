@@ -1,0 +1,111 @@
+:root {
+  /* palette */
+  --color-primary: #0070f3;
+  --color-secondary: #7928ca;
+  --color-success: #17c964;
+  --color-warning: #f5a623;
+  --color-error: #f21361;
+  --color-gradient: linear-gradient(
+    112deg,
+    #aaffec -63.59%,
+    #ff4ecd -20.3%,
+    #0070f3 70.46%
+  );
+  --color-muted: #1f2d50;
+  --color-info: #0070f3;
+  --color-warning-background: #8e4d0b;
+  --color-foreground: #222;
+  --color-background: #fff;
+  --color-background-2: #f2f2f2;
+  --color-text: #333;
+  --color-text-decoration: rgba(51, 51, 51, 0.5);
+  --color-link: var(--color-text);
+  --color-outline: rgba(59, 156, 247, 0.5);
+  --color-selection: var(--color-primary);
+  --color-backdrop: rgba(0, 0, 0, 0.3);
+  /*--color-code: #6cc0e1;*/
+  /*--color-quote-background: #1d2027;*/
+  /*--color-quote: #797c84;*/
+
+  /*  spacing  */
+  --spacing-0_5: 4px;
+  --spacing-1: 8px;
+  --spacing-1_5: 12px;
+  --spacing-2: 16px;
+  --spacing-2_5: 20px;
+  --spacing-3: 24px;
+  --spacing-3_5: 32px;
+  --spacing-4: 40px;
+  --spacing-4_5: 48px;
+  --spacing-5: 64px;
+
+  /* fonts */
+  --font-size-1: 12px;
+  --font-size-2: 14px;
+  --font-size-3: 16px;
+  --font-size-4: 18px;
+  --font-size-5: 20px;
+  --font-size-6: 24px;
+  --font-size-7: 30px;
+  --font-size-8: 36px;
+  --font-size-9: 48px;
+  --font-size-10: 60px;
+  --font-size-11: 72px;
+  --base-font-size: var(--font-size-4);
+  --rhythm: 1.625;
+  --scale: 1.25;
+  --default-font-family: 'Wotfard', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  /* radii */
+  --radii-module-1: 2px;
+  --radii-module-2: 4px;
+  --radii-module-3: 6px;
+
+  /* shadow */
+  --shadow-lvl-1: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lvl-2: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+html[data-theme='dark'] {
+  --color-background: #16181d;
+  --color-background-2: #1f2229;
+  --color-background-opacity: rgba(22, 24, 29, 0.5);
+  --color-text: #fff;
+  --color-text-decoration: rgba(208, 213, 223, 0.5);
+  --color-link: #fff;
+
+  /*--color-muted: #bfd8fc;*/
+  /*--color-warning-background: #fce6c7;*/
+  /*--color-quote-background: #f4f2f2;*/
+  /*--color-quote: #aeacac;*/
+}
+
+body {
+  font-family: var(--default-font-family);
+  font-size: var(--base-font-size);
+  line-height: var(--rhythm);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+body,
+html,
+#root {
+  height: 100%;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+a {
+  color: var(--color-link);
+  transition: all 0.15s ease-in-out;
+}
